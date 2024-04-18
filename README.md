@@ -870,17 +870,21 @@ The time complexity of Kruskal's algorithm is dominated by the sorting step, whi
 The Union-Find operations (finding and merging) take nearly constant time on average.
 Overall, the time complexity of the entire algorithm is O(E log E).
 
-##21. ASSEMBLY LINE
+## 21.PRACTICAL21: ASSEMBLY LINE
 ALGORITHM:
+
 It takes input such as processing times for stations (a), transfer times between stations (t), entry times for lines (e), and exit times for lines (x).
 It calculates the minimum time required to complete tasks on each assembly line using dynamic programming.
 It determines the optimal path through the assembly lines to minimize the total time.
 It returns the minimum cost (time) required to complete all tasks and prints the optimal path through the assembly lines.
+
 TIME COMPLEXITY:
+
 The time complexity of this algorithm is O(n), where n is the number of stations on each assembly line. This is because the algorithm iterates through each station once to calculate the minimum time and path. Since the number of stations is fixed (defined as NUM_STATIONS), the time complexity remains constant relative to the size of the input.
 
-##22 RANDOM POSITION
+## 22.PRACTICAL22: RANDOM POSITION
 ALGORITHM:
+
 It defines a function generate_number to generate an array of random numbers.
 It defines a function swap to swap two integers.
 It defines a function random_sort implementing the randomized quicksort algorithm.
@@ -888,13 +892,71 @@ In the main function, it iterates over array sizes from 100,000 to 500,000 in in
 For each array size, it generates a random array, sorts it ten times using random_sort, and measures the time taken.
 It calculates the average time taken for each array size and prints it out.
 
-##23 ACITIVITY SELECTION 
-ALGORITHM:It defines a structure Activity with start and finish times.
+## 23.PRACTICAL23: ACITIVITY SELECTION 
+
+ALGORITHM:
+
+It defines a structure Activity with start and finish times.
 It defines a comparison function activityCompare to sort activities based on their finish times.
 It defines a function printMaxActivities to print the maximum non-overlapping activities.
 In the main function, it initializes an array of activities.
 It calculates the size of the array and calls printMaxActivities to print the maximum non-overlapping activities.
+
 TIME COMPLEXITY
+
+The time complexity of this algorithm is O(n log n), where n is the number of activities.
+
+## 24.PRACTICAL-24: GRAPH COLORING
+
+ALGORTIHM: 
+
+The Graph class represents an undirected graph using an adjacency list.
+The addEdge method adds an edge between two vertices.
+The greedyColoring method implements the greedy graph coloring algorithm:
+It initializes two vectors, result and available, to store the color assigned to each vertex and the availability of colors, respectively.
+It assigns the first vertex the color 0.
+For each subsequent vertex, it checks the colors assigned to its adjacent vertices and assigns the smallest available color.
+Finally, it determines the maximum color used, which represents the minimum number of colors required to color the graph.
+In the main function, it takes input for the number of vertices and edges, adds edges to the graph, and then calls the greedyColoring method to determine the minimum number of colors required.
+
+TIME COMPLEXITY:
+
+The time complexity of this algorithm is O(V^2), where V is the number of vertices.
+This complexity arises from the nested loops used to iterate over the vertices and their adjacent vertices.
+The outer loop iterates over each vertex (V iterations), and the inner loop iterates over the adjacent vertices of each vertex (up to V iterations in the worst case.
+
+## 25.PRACTICAL-25: N QUEENS
+
+ALGORITHM:
+
+The printSolution function prints the current configuration of the chessboard.
+The isSafe function checks whether it's safe to place a queen at a particular position on the board.
+The solveNQueensUtil function is a recursive utility function that tries to place queens column by column, checking for safety at each step. If a solution is found, it prints it.
+The solveNQueens function initializes an empty board and starts the recursive solving process from the first column.
+In the main function, the user inputs the size of the chessboard, and the solveNQueens function is called to find and print all solutions.
+
+TIME COMPLEXITY:
+
+N-Queens problem using backtracking depends on the number of valid configurations or solutions. The worst-case time complexity of the backtracking algorithm is exponential, specifically O(N!), where N is the size of the chessboard (the number of rows/columns).
+
+This is because the backtracking algorithm tries all possible configurations of placing queens on the board, checking for safety at each step. Although backtracking reduces the number of configurations by pruning branches that lead to invalid solutions, the number of possible configurations is still factorial in nature.
+
+## 26.PRACTICAL-26: MAGIC SQUARE
+
+ALGORITHM:
+
+The generateMagicSquare function takes an odd integer n as input and generates a magic square of size n×n.
+It initializes an n×n vector magicSquare to store the magic square.
+It starts from the bottom row and middle column, then fills in the numbers from 1 to 2n 2 in a specific pattern,
+ensuring that each cell is filled exactly once and the sum of each row, column, and diagonal is the same.
+Once the magic square is generated, it prints the square and calculates the magic sum, which is n times the average of the numbers from 1 to 2n 2
+In the main function, the user inputs an odd number  n, and the generateMagicSquare function is called with this input.
+
+TIME COMPLEXITY:
+The time complexity of generating a magic square using this algorithm is O(n^2)
+This is because the algorithm fills in each cell of then×n grid exactly once, performing constant-time operations per cell.
+
+
 
 
 
