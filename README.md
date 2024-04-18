@@ -972,6 +972,23 @@ Let n and m be the lengths of strings s and t respectively.
 Constructing the dp table requires iterating through each character of both strings, resulting in a time complexity of O(n * m).
 Constructing the LCS string requires another iteration through the dp table, which also takes O(n * m) time.
 
+## 28.PRACTICAL-28:KANPSACK PURGE(DP)
+
+ALGORITHM:
+
+It defines a struct Item to represent items with weight and profit.
+It defines a merge function to merge two sorted vectors of Item structs based on profit.
+It defines a knapsack function to solve the knapsack problem using dynamic programming.
+In the main function:
+It takes input for the number of items, their weights, profits, and knapsack capacity.
+It sorts the items based on profit in descending order.
+It creates two subsets of items: one with items having weights less than the average weight and the other with items having profits greater than the average profit.
+It solves the knapsack problem separately for each subset and prints the maximum profit achievable along with the corresponding knapsack capacity.
+
+TIME COMPLEXITY:
+
+As for the time complexity, the dominant factor is the knapsack algorithm, which has a time complexity of O(n * W), where n is the number of items and W is the knapsack capacity.
+
 
 
 
