@@ -956,6 +956,21 @@ TIME COMPLEXITY:
 The time complexity of generating a magic square using this algorithm is O(n^2)
 This is because the algorithm fills in each cell of then×n grid exactly once, performing constant-time operations per cell.
 
+## 27.PRACTICAL-27:LEAST COMMON SUBSEQUENCE
+
+ALGORITHM:
+
+It takes two strings s and t as input from the user.
+It initializes a 2D vector dp of size (n+1) x (m+1) where n and m are the lengths of strings s and t respectively. This table is used to store the length of the LCS for each possible substring of s and t.
+It iterates through each character of both strings and fills the dp table based on whether the characters match or not. If the characters match, it increments the length of LCS by 1; otherwise, it takes the maximum of the LCS lengths obtained by excluding one character from either string.
+After filling the dp table, it extracts the LCS string by tracing back from the bottom-right corner of the table using the computed LCS lengths.
+Finally, it prints the length of the LCS and the LCS string itself.
+
+TIME COMPLEXITY:
+
+Let n and m be the lengths of strings s and t respectively.
+Constructing the dp table requires iterating through each character of both strings, resulting in a time complexity of O(n * m).
+Constructing the LCS string requires another iteration through the dp table, which also takes O(n * m) time.
 
 
 
