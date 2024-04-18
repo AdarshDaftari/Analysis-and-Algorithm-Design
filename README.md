@@ -1,5 +1,5 @@
 # analysis-and-design-of-algorithm
-
+Adarsh Daftari 
 ##  1.Practical 1 :- Selection sort analysis
 ALGORITHM :  This practical  implements the selection sort algorithm. It iterates through the array, finds the minimum element in the unsorted part, and swaps it with the first element of the unsorted part. This process is repeated until the entire array is sorted.
 
