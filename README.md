@@ -870,3 +870,31 @@ The time complexity of Kruskal's algorithm is dominated by the sorting step, whi
 The Union-Find operations (finding and merging) take nearly constant time on average.
 Overall, the time complexity of the entire algorithm is O(E log E).
 
+##21. ASSEMBLY LINE
+ALGORITHM:
+It takes input such as processing times for stations (a), transfer times between stations (t), entry times for lines (e), and exit times for lines (x).
+It calculates the minimum time required to complete tasks on each assembly line using dynamic programming.
+It determines the optimal path through the assembly lines to minimize the total time.
+It returns the minimum cost (time) required to complete all tasks and prints the optimal path through the assembly lines.
+TIME COMPLEXITY:
+The time complexity of this algorithm is O(n), where n is the number of stations on each assembly line. This is because the algorithm iterates through each station once to calculate the minimum time and path. Since the number of stations is fixed (defined as NUM_STATIONS), the time complexity remains constant relative to the size of the input.
+
+##22 RANDOM POSITION
+ALGORITHM:
+It defines a function generate_number to generate an array of random numbers.
+It defines a function swap to swap two integers.
+It defines a function random_sort implementing the randomized quicksort algorithm.
+In the main function, it iterates over array sizes from 100,000 to 500,000 in increments of 20,000.
+For each array size, it generates a random array, sorts it ten times using random_sort, and measures the time taken.
+It calculates the average time taken for each array size and prints it out.
+
+##23 ACITIVITY SELECTION 
+ALGORITHM:It defines a structure Activity with start and finish times.
+It defines a comparison function activityCompare to sort activities based on their finish times.
+It defines a function printMaxActivities to print the maximum non-overlapping activities.
+In the main function, it initializes an array of activities.
+It calculates the size of the array and calls printMaxActivities to print the maximum non-overlapping activities.
+TIME COMPLEXITY
+
+
+
